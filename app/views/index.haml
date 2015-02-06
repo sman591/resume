@@ -5,9 +5,143 @@
     %title Resume - Stuart Olivera
     %link{href: "stylesheets/main.css", rel: "stylesheet", type: "text/css"}/
     %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", rel: "stylesheet", type: "text/css"}/
-    %link{href: "http://fonts.googleapis.com/css?family=Arvo:400,700", rel: "stylesheet", type: "text/css"}/
+    %link{href: "//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Lato:300,400,700|Arvo:400,700", rel: "stylesheet", type: "text/css"}/
   %body
-    %h1 Stuart Olivera
-    %h2 Passionate web designer &amp; developer
-    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js", type: "text/javascript"}
-    %script{src: "javascripts/main.js"}
+    #resume
+      %header
+        .block.half
+          %h1 Stuart Olivera
+          %h2.tagline web designer &amp; full-stack developer
+        .block.half.right
+          %ul.links
+            %li
+              %a{href: "https://github.com/sman591"} github.com/sman591
+            %li
+              %a{href: "mailto:stuart@stuartolivera.com"} stuart@stuartolivera.com
+            %li
+              %a{href: "https://linkedin.com/in/stuartolivera"} linkedin.com/in/stuartolivera
+            %li
+              %a{href: "tel:7035099523"} (703) 509-9523
+
+      %section#education
+        %h2
+          %i.fa.fa-graduation-cap
+          Education
+        %article
+          %p Rochester Institute of Technology, B.S. Computer Science, expected gratudation Spring 2019
+
+      %section#experience
+        %h2
+          %i.fa.fa-suitcase
+          Experience
+        %article
+          %h3
+            BusyConf, LLC
+            %span.title Software Intern
+            %span.source
+              %a{href: "http://busyconf.com"} busyconf.com
+            %span.timeline Summer 2013-Present
+          %ul.split-2
+            %li Improved front end interfaces
+            %li Implemented sales-driving techniques
+            %li Migrated billing providers
+            %li Introduced third party integrations
+        %article
+          %h3
+            Olivera Web, LLC
+            %span.title Founder, Freelancer
+            %span.source
+              %a{href: "http://oliveraweb.com"} oliveraweb.com
+            %span.timeline 2009 - Present
+          %ul.split-2
+            %li Developed custom web application solutions
+            %li Designed unique, personal &amp; business websites
+            %li Created &amp; maintain linux hosting services
+        %article
+          %h3
+            CSH Drink for iOS
+            %span.title Personal Project
+            %span.source
+              %a{href: "https://github.com/sman591/csh-drink-ios"} github.com/sman591/csh-drink-ios
+            %span.timeline Winter 2015 - Present
+          %ul.split-2
+            %li Developed app to access CSH vending machines
+            %li Designed consistent UI with other CSH iOS apps
+            %li Integrated REST API
+            %li First iOS &amp; Swift project
+        %article
+          %h3
+            BrickHack.io
+            %span.title Collaborative Project
+            %span.source
+              %a{href: "https://brickhack.io"} brickhack.io
+            %span.timeline Fall 2014 - Present
+          %ul.split-2
+            %li Developed backend, management interface
+            %li Configured continuous integration systems
+            %li Managed code contributions
+        %article
+          %h3
+            RIT Assassins
+            %span.title Collaborative Project
+            %span.source
+              %a{href: "https://rit-assassins.github.io/arit-www/"} rit-assassins.github.io/arit-www/
+            %span.timeline Summer 2014
+          %ul.split-2
+            %li Developed front-end driven website (AngularJS)
+            %li Integrated REST API
+            %li Integrated Facebook authentication
+        %article
+          %h3
+            DataMine
+            %span.title Collaborative Project
+            %span.source
+              %a{href: "http://datamine.oweb.co"} datamine.oweb.co
+            %span.timeline Winter - Spring 2013
+          %ul.split-2
+            %li Developed front-end driven website (Backbone.js)
+            %li Developed backend REST API (PHP)
+            %li Community data share platform
+
+      %section.half#skills
+        %h2
+          %i.fa.fa-list
+          Skills
+        %article
+          %ul.levels
+            %li
+              %ul
+                %li HTML/CSS
+                %li jQuery
+            %li
+              %ul
+                %li Ruby on Rails
+                %li PHP
+            %li
+              %ul
+                %li JavaScript
+                %li Git
+            %li
+              %ul
+                %li MySQL
+                %li MongoDB
+            %li
+              %ul
+                %li
+                  %i.fa.fa-level-up
+                  Swift
+                %li AngularJS
+                %li Meteor
+                %li PostgreSQL
+
+      %section.half#activities
+        %h2
+          %i.fa.fa-gamepad
+          Activities
+        %ul
+          %li Member of Computer Science House, codeRIT, RIT Players, and RIT Pep Band
+          %li Recreational skiier &amp; snowboarder
+          %li Audiophile &amp; live sound engineer for events, bands, and shows
+
+      %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js", type: "text/javascript"}
+      %script{src: "javascripts/main.js"}
