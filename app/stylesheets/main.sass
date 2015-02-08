@@ -13,22 +13,30 @@ body
   background: $offWhite
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight: 300
-  font-size: 15px
+  font-size: 14px
   color: $textColor
 
+html, body
+  @media print
+    margin: 0
+    background: #fff
+
 #resume
-  max-width: 850px
-  height: 800px
+  max-width: 750px
+  height: 1000px
   background: #fff
   margin: 15px auto
-  padding: 50px
+  padding: 50px 50px 10px
   border: 1px solid darken($offWhite, 5%)
   transition: all 0.5s ease
-  +box-shadow(darken($offWhite, 30%) 5px 6px 5px)
+  overflow: auto
+  @media screen
+    +box-shadow(darken($offWhite, 30%) 5px 6px 5px)
   @media print
+    height: auto
     border: none
-    padding: 20px 30px
-    +box-shadow(transparent 0 0 0)
+    padding: 30px
+    margin: 0
   @media screen and (max-width: 880px)
     margin-top: 0
     max-width: 100%
@@ -43,6 +51,8 @@ body
 .half
   float: left
   width: 50%
+  article
+    padding-right: 10px
 
 .right
   text-align: right
@@ -59,12 +69,11 @@ h1
   margin-bottom: 0.1em
 
 h2
-  font-size: 20px
+  font-size: 18px
   font-weight: 400
-  margin-bottom: 0.5em
 
 h3
-  font-size: 17px
+  font-size: 15px
   font-weight: 400
   margin-bottom: 0.2em
 
@@ -84,13 +93,16 @@ a, a:visited
 
 .links
   list-style: none
-  font-size: 16px
+  font-size: 14px
 
 section
-  margin-bottom: 20px
+  margin-bottom: 22px
 
-  h2 .fa
-    width: 28px
+  h2
+    font-family: Arvo, serif
+    margin-bottom: 0.7em
+    .fa
+      width: 28px
 
   ul
     margin-left: 20px
@@ -105,10 +117,13 @@ section
 
 article
   margin: 0 0 10px 10px
+  &:last-child
+    margin-bottom: 0
 
 h2.tagline
-  font-size: 22px
+  font-size: 21px
   font-weight: 300
+  margin-bottom: 0.5em
 
 .contacts
   text-align: center
@@ -121,12 +136,27 @@ h3
     font-weight: 300
     color: lighten($textColor, 45%)
   span.title
-    font-size: 15px
+    font-size: 14px
     margin-left: 3px
   span.source
     margin-left: 5px
-    font-size: 13px
+    font-size: 12px
   span.timeline
     float: right
-    font-size: 15px
+    font-size: 14px
     margin-left: 3px
+
+ul.levels
+  margin-left: 0
+  > li
+    list-style: none
+    margin: 0 0 5px 0
+    border-bottom: 1px solid #ddd
+  ul
+    margin-left: 0
+    > li
+      list-style: none
+      float: left
+      margin: 0 5px
+      &.level
+        float: right
