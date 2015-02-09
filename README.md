@@ -29,7 +29,7 @@ My personal resume, built with the web.
   grunt
   ```
 
-5. Your local environment is now available at http://localhost:4000
+5. Your local environment is now available at [http://localhost:4000](http://localhost:4000)
 
 # Ongoing Development
 
