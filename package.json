@@ -1,9 +1,9 @@
 {
-  "name": "audiophile",
+  "name": "Stuart Olivera's Resume",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sman591/audiophile"
+    "url": "https://github.com/sman591/resume"
   },
   "dependencies": {},
   "devDependencies": {
