@@ -21,7 +21,7 @@ module.exports = function(grunt){
         },
         files: [{
           expand: true,
-          cwd: 'app/coffeescript',
+          cwd: 'app/javascripts',
           src: ['**/*.coffee', '**/*.js'],
           dest: 'public/javascripts',
           ext: '.js'
@@ -54,7 +54,7 @@ module.exports = function(grunt){
     },
     watch: {
       coffee: {
-        files: ['app/coffeescript/**/*.coffee'],
+        files: ['app/javascripts/**/*.coffee'],
         tasks: ['coffee'],
         options: {
           livereload: true,
