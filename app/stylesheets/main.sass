@@ -3,9 +3,15 @@
 @import compass/reset
 @import compass/css3
 
+$pageMargin: 15px
 $offWhite: rgb(240, 240, 237)
 $textColor: rgb(50, 50, 50)
 $linkColor: rgb(0,20,180)
+$shadowColor: darken($offWhite, 30%)
+
+@mixin content
+  background: #fff
+  border: 1px solid darken($offWhite, 5%)
 
 *
   box-sizing: border-box
@@ -22,17 +28,33 @@ html, body
     margin: 0
     background: #fff
 
+#download
+  position: fixed
+  top: $pageMargin
+  right: $pageMargin
+  a
+    padding: 0.5em
+    font-size: 1.5em
+    display: inline-block
+    +content
+    +box-shadow($shadowColor 3px 4px 3px)
+  a, a:visited
+    color: $textColor
+  a:hover
+    background: darken(#fff, 2%)
+  @media print
+    display: none
+
 #resume
   max-width: 778px
   height: 992px
-  background: #fff
-  margin: 15px auto
+  margin: $pageMargin auto
   padding: 40px 40px 36px
-  border: 1px solid darken($offWhite, 5%)
   transition: all 0.5s ease
   overflow: auto
+  +content
   @media screen
-    +box-shadow(darken($offWhite, 30%) 5px 6px 5px)
+    +box-shadow($shadowColor 5px 6px 5px)
   @media print
     height: auto
     border: none
