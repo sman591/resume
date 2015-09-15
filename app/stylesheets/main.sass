@@ -5,6 +5,7 @@
 
 $offWhite: rgb(240, 240, 237)
 $textColor: rgb(50, 50, 50)
+$linkColor: rgb(0,20,180)
 
 *
   box-sizing: border-box
@@ -90,8 +91,11 @@ ul
     margin-left: 20px
 
 a, a:visited
-  color: rgb(0,20,180)
+  color: $linkColor
   text-decoration: none
+
+a:hover
+  text-decoration: underline
 
 strong
   font-weight: bold
