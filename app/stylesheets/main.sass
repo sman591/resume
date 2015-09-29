@@ -16,11 +16,14 @@ $shadowColor: darken($offWhite, 30%)
 *
   box-sizing: border-box
 
+html
+  font-size: 13.5px // rounds normal font down to 13px but keeps larger number for em calculation
+
 body
   background: $offWhite
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 1em
   font-weight: 300
-  font-size: 14px
   color: $textColor
 
 html, body
@@ -49,7 +52,7 @@ html, body
   max-width: 778px
   height: 992px
   margin: $pageMargin auto
-  padding: 40px 40px 36px
+  padding: 2.857em 2.857em 2.571em
   transition: all 0.5s ease
   overflow: auto
   +content
@@ -58,7 +61,7 @@ html, body
   @media print
     height: auto
     border: none
-    padding: 18px 18px 0
+    padding: 0.778em 0.778em 0
     margin: 0
   @media screen and (max-width: 790px)
     margin-top: 0
@@ -69,7 +72,7 @@ html, body
 
 .block
   float: left
-  margin-bottom: 20px
+  margin-bottom: 0.8em
 
 .half
   float: left
@@ -94,24 +97,24 @@ html, body
 
 h1
   font-family: Arvo, serif
-  font-size: 46px
+  font-size: 3.286rem
   color: rgb(0, 192, 215)
   margin-bottom: 0.1em
 
 h2
-  font-size: 18px
+  font-size: 1.143rem
   font-weight: 400
 
 h3
-  font-size: 15px
+  font-size: 1rem
   font-weight: 400
-  margin-bottom: 0.2em
+  margin-bottom: 0.25em
 
 ul
   list-style: square
   line-height: 1.45em
   li
-    margin-left: 20px
+    margin-left: 1.43em
 
 a, a:visited
   color: $linkColor
@@ -127,20 +130,20 @@ strong
 
 .links
   list-style: none
-  font-size: 14px
+  font-size: 1em
 
 section
   clear: both
-  margin-bottom: 18px
+  margin-bottom: 1em
 
   h2
     font-family: Arvo, serif
     margin-bottom: 0.65em
     .fa
-      width: 27px
+      width: 1.53em
 
   ul
-    margin-left: 20px
+    margin-left: 1.428em
     overflow: auto
     li
       list-style: square
@@ -151,41 +154,41 @@ section
         float: none
 
 article
-  margin: 0 0 8px 10px
+  margin: 0 0 0.574em 0.714em
   &:last-child
     margin-bottom: 0
 
 h2.tagline
-  font-size: 21px
+  font-size: 1.5em
   font-weight: 300
-  margin-bottom: 0.5em
+  margin-bottom: 0.8em
 
 .contacts
   text-align: center
   li
     display: inline-block
-    padding: 0 15px
+    padding: 0 1.0714em
 
 h3
   span
     font-weight: 300
     color: lighten($textColor, 40%)
   span.title
-    font-size: 14px
-    margin-left: 3px
+    font-size: 0.93em
+    margin-left: 0.215em
   span.source
-    margin-left: 5px
-    font-size: 12px
+    margin-left: 0.35em
+    font-size: 0.8em
   span.timeline
     float: right
-    font-size: 14px
-    margin-left: 3px
+    font-size: 0.93em
+    margin-left: 0.215em
 
 ul.levels
   margin-left: 0
   > li
     list-style: none
-    margin: 5px 0 0
+    margin: 0.357em 0 0
   ul
     margin-left: 0
     > li
@@ -216,15 +219,15 @@ ul.levels
     width: 10%
     border-color: #b07219
 
-#experience
-  margin-bottom: 14px
+#education
+  padding-bottom: 0.1em
 
 #skills
-  margin-top: -10px
+  margin-top: -0.4em
   article
     margin-left: 0
 
 #activities, #achievements
   margin-bottom: 0
   h2
-    margin-bottom: 0.55em
+    margin-bottom: 0.45em
