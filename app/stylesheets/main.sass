@@ -17,7 +17,7 @@ $shadowColor: darken($offWhite, 30%)
   box-sizing: border-box
 
 html
-  font-size: 13.5px // rounds normal font down to 13px but keeps larger number for em calculation
+  font-size: 13px
 
 body
   background: $offWhite
@@ -189,6 +189,8 @@ ul.levels
   > li
     list-style: none
     margin: 0.357em 0 0
+  &:first-child > li
+    margin-top: 0
   ul
     margin-left: 0
     > li
@@ -223,7 +225,6 @@ ul.levels
   padding-bottom: 0.1em
 
 #skills
-  margin-top: -0.4em
   article
     margin-left: 0
 
