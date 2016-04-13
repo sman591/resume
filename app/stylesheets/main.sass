@@ -17,7 +17,9 @@ $shadowColor: darken($offWhite, 30%)
   box-sizing: border-box
 
 html
-  font-size: 12.5px
+  font-size: 13px
+  @media print
+    font-size: 12.5px
 
 body
   background: $offWhite
@@ -49,7 +51,7 @@ html, body
     display: none
 
 #source-link
-  position: fixed
+  position: absolute
   bottom: -1.74em
   font-size: 0.8em
   color: #000
