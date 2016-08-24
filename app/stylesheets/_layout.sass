@@ -1,0 +1,44 @@
+.block
+  float: left
+  margin-bottom: 0.8em
+
+.half
+  float: left
+  clear: none
+  width: 50%
+  article
+    padding-right: 10px
+
+.third
+  float: left
+  width: 33.333%
+  article
+    padding-right: 10px
+
+.right
+  text-align: right
+
+.break
+  overflow: auto
+
+// Specifics
+
+section
+  clear: both
+  margin-bottom: 1em
+
+  ul
+    margin-left: 1.428em
+    overflow: auto
+    li
+      list-style: square
+    &.split-2 li
+      width: 45%
+      float: left
+      @media screen and (max-width: 700px)
+        float: none
+
+article
+  margin: 0 0 0.574em 0.714em
+  &:last-child
+    margin-bottom: 0

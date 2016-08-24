@@ -1,0 +1,16 @@
+#download
+  position: fixed
+  top: $pageMargin
+  right: $pageMargin
+  a
+    padding: 0.5em
+    font-size: 1.5em
+    display: inline-block
+    +content
+    +box-shadow($shadowColor 3px 4px 3px)
+  a, a:visited
+    color: $textColor
+  a:hover
+    background: darken(#fff, 2%)
+  @media print
+    display: none
