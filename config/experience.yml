@@ -1,0 +1,60 @@
+visible:
+  - apple
+  - datto
+  - friendlyu
+  - oliveraweb
+  - busyconf
+items:
+  -
+    key: apple
+    company: Apple Inc.
+    title: Software Engineering Intern
+    website: apple.com
+    timeline: Summer 2016
+    bullets:
+      - Developed custom content editor & platform
+      - Implemented instructional content for product tours
+      - Created deployment workflow to be used across projects
+  -
+    key: datto
+    company: Datto, Inc.
+    title: Software Engineering Intern
+    website: datto.com
+    timeline: Summer 2015
+    bullets:
+      - Developed interactive API query builder
+      - Designed API home and documentation pages
+      - Built automated system for packaging the API
+      - Developed documentation system for API
+  -
+    key: friendlyu
+    company: FriendlyU, LLC
+    title: Software Engineer
+    website: friendlyu.com
+    timeline: Summer 2015 - Present
+    bullets:
+      - Developed interactive API query builder
+      - Designed API home and documentation pages
+      - Built automated system for packaging the API
+      - Developed documentation system for API
+  -
+    key: oliveraweb
+    company: Olivera Web, LLC
+    title: Founder, Freelancer
+    website: oliveraweb.com
+    timeline: 2009 - Present
+    bullets:
+      - Developed custom web apps for scheduling, teaching
+      - Designed unique personal &amp; business websites
+      - Created &amp; maintain Linux hosting services
+  -
+    key: busyconf
+    company: BusyConf, LLC
+    title: Software Intern
+    website: busyconf.com
+    timeline: 2013 - 2015
+    bullets:
+      - Improved design & clarity of front-end interfaces
+      - Maintained various pieces of a Ruby on Rails app
+      - Migrated billing provider to Stripe
+      - Integrated third party APIs

@@ -1,3 +1,4 @@
+- require_relative 'data.rb'
 !!!
 %html{xmlns: "http://www.w3.org/1999/xhtml"}
   %head
@@ -49,104 +50,32 @@
         %h2
           %i.fa.fa-fw.fa-suitcase
           Experience
-        %article
-          %h3
-            Apple Inc.
-            %span.title Software Engineering Intern
-            %span.source
-              %a{href: "https://apple.com"} apple.com
-            %span.timeline Summer 2016
-          %ul.split-2
-            %li Developed custom content editor & platform
-            %li Implemented instructional content for product tours
-            %li Created deployment workflow to be used across projects
-        %article
-          %h3
-            Datto, Inc.
-            %span.title Software Engineering Intern
-            %span.source
-              %a{href: "https://datto.com"} datto.com
-            %span.timeline Summer 2015
-          %ul.split-2
-            %li Developed interactive API query builder
-            %li Designed API home and documentation pages
-            %li Built automated system for packaging the API
-            %li Developed documentation system for API
-        %article
-          %h3
-            FriendlyU, LLC
-            %span.title Software Engineer
-            %span.source
-              %a{href: "https://friendlyu.com"} friendlyu.com
-            %span.timeline Summer 2015 - Present
-          %ul.split-2
-            %li Configured continuous integration systems
-            %li Developed core features of Android app
-            %li Developed advertisement network /w API
-            %li Maintained server infrastructure
-        %article
-          %h3
-            Olivera Web, LLC
-            %span.title Founder, Freelancer
-            %span.source
-              %a{href: "https://oliveraweb.com"} oliveraweb.com
-            %span.timeline 2009 - Present
-          %ul.split-2
-            %li Developed custom web apps for scheduling, teaching
-            %li Designed unique personal &amp; business websites
-            %li Created &amp; maintain Linux hosting services
-        %article
-          %h3
-            BusyConf, LLC
-            %span.title Software Intern
-            %span.source
-              %a{href: "http://busyconf.com"} busyconf.com
-            %span.timeline 2013 - 2015
-          %ul.split-2
-            %li Improved design & clarity of front-end interfaces
-            %li Maintained various pieces of a Ruby on Rails app
-            %li Migrated billing provider to Stripe
-            %li Integrated third party APIs
+        - EXPERIENCE.each do |exp|
+          %article
+            %h3
+              = exp['company']
+              %span.title= exp['title']
+              %span.source
+                %a{href: "https://#{exp['website']}"}= exp['website']
+              %span.timeline= exp['timeline']
+            %ul.split-2
+              - exp['bullets'].each do |bullet|
+                %li= bullet
       %section#projects
         %h2
           %i.fa.fa-fw.fa-rocket
           Projects
-        %article
-          %h3
-            Discourse NNTP Bridge
-            %span.title Personal Project
-            %span.source
-              %a{href: "https://github.com/sman591/discourse-nntp-bridge"} github.com/sman591/discourse-nntp-bridge
-            %span.timeline Winter 2016 - Present
-          %ul.split-2
-            %li Plugin to sync NNTP posts with a Discourse forum
-            %li Asynchronous execution for reliability, retries
-            %li Integrated automated testing with Travis CI
-            %li Utilized Ruby on Rails Engine functionality
-        %article
-          %h3
-            CSH Drink for iOS
-            %span.title Personal Project
-            %span.source
-              %a{href: "https://github.com/sman591/csh-drink-ios"} github.com/sman591/csh-drink-ios
-            %span.timeline Winter 2015 - Present
-          %ul.split-2
-            %li Developed app to access CSH vending machines
-            %li Designed consistent UI with other CSH iOS apps
-            %li Integrated seamless login via URL schemes
-            %li Integrated REST API
-        %article
-          %h3
-            BrickHack.io
-            %span.title Collaborative Project
-            %span.source
-              %a{href: "https://brickhack.io"} brickhack.io
-            %span.timeline Fall 2014 - Present
-          %ul.split-2
-            %li Developed registration, management interface
-            %li Created live statistics dashboard to track progress
-            %li Managed code contributions
-            %li Configured continuous integration systems
+        - PROJECTS.each do |proj|
+          %article
+            %h3
+              = proj['name']
+              %span.title= proj['title']
+              %span.source
+                %a{href: "https://#{proj['website']}"}= proj['website']
+              %span.timeline= proj['timeline']
+            %ul.split-2
+              - proj['bullets'].each do |bullet|
+                %li= bullet
         %article
           %h3
             Open Source:

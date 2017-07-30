@@ -41,7 +41,8 @@ module.exports = function(grunt){
     haml: {
       dist: {
         options: {
-          bundleExec: true,
+          language: 'ruby',
+          rubyHamlCommand: 'bundle exec haml -t ugly',
         },
         files: [{
           expand: true,
@@ -68,7 +69,10 @@ module.exports = function(grunt){
         }
       },
       haml: {
-        files: ['app/views/**/*.haml'],
+        files: [
+          'app/views/*',
+          'config/*',
+        ],
         tasks: ['haml'],
         options: {
           livereload: true,

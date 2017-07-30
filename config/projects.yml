@@ -1,0 +1,38 @@
+visible:
+  - nntpbridge
+  - cshdrink
+  - brickhack
+items:
+  -
+    key: nntpbridge
+    name: Discourse NNTP Bridge
+    title: Personal Project
+    website: github.com/sman591/discourse-nntp-bridge
+    timeline: Winter 2016 - Present
+    bullets:
+      - Plugin to sync NNTP posts with a Discourse forum
+      - Asynchronous execution for reliability, retries
+      - Integrated automated testing with Travis CI
+      - Utilized Ruby on Rails Engine functionality
+  -
+    key: cshdrink
+    name: CSH Drink for iOS
+    title: Personal Project
+    website: github.com/sman591/csh-drink-ios
+    timeline: Winter 2015 - Present
+    bullets:
+      - Developed app to access CSH vending machines
+      - Designed consistent UI with other CSH iOS apps
+      - Integrated seamless login via URL schemes
+      - Integrated REST API
+  -
+    key: brickhack
+    name: BrickHack.io
+    title: Collaborative Project
+    website: brickhack.io
+    timeline: Fall 2014 - Present
+    bullets:
+      - Developed registration, management interface
+      - Created live statistics dashboard to track progress
+      - Managed code contributions
+      - Configured continuous integration systems
