@@ -10,8 +10,7 @@ My personal resume, built with the web.
 1. Install development requirements
 
   ```bash
-  $ brew install npm
-  $ npm install -g grunt grunt-cli
+  $ brew install yarn
   ```
 
 3. Clone the repo & install dependencies
@@ -20,13 +19,13 @@ My personal resume, built with the web.
   $ git clone git@github.com:sman591/resume.git
   $ cd resume
   $ bundle install
-  $ npm install
+  $ yarn install
   ```
 
 4. Startup the local development environment
 
   ```bash
-  grunt
+  yarn start
   ```
 
 5. Your local environment is now available at [http://localhost:4000](http://localhost:4000)
@@ -35,9 +34,9 @@ My personal resume, built with the web.
 
 Useful commands:
 
- - ```grunt``` - builds and starts a local server that watches for local changes
- - ```grunt build``` - performs a build, saved to /public
- - ```grunt gh-pages``` - deploy the current build to the gh-pages branch
+ - ```yarn start``` - builds and starts a local server that watches for local changes
+ - ```yarn build``` - performs a build, saved to /public
+ - ```yarn deploy``` - deploy the current build to the gh-pages branch
 
 
 # Deployment
