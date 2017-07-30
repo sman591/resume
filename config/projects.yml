@@ -36,3 +36,33 @@ items:
       - Created live statistics dashboard to track progress
       - Managed code contributions
       - Configured continuous integration systems
+  -
+    key: pegg
+    name: iOS App Challenge - Pegg
+    title: Team Hackathon
+    website: devpost.com/software/pegg
+    timeline: Winter 2015
+    bullets:
+      - Implemented community and social capabilities
+      - Developed photo-taking app
+      - Connected with custom API
+  -
+    key: datamine
+    name: DataMine
+    title: Collaborative Project
+    website: datamine.oweb.co
+    timeline: Winter - Spring 2013
+    bullets:
+      - Developed front-end driven website (Backbone.js)
+      - Developed backend REST API (PHP)
+      - Community data share platform
+  -
+    key: ritassassins
+    name: RIT Assassins
+    title: Collaborative Project
+    website: rit-assassins.github.io/arit-www/
+    timeline: Summer 2014
+    bullets:
+      - Developed front-end driven website (AngularJS)
+      - Integrated REST API
+      - Integrated Facebook authentication
