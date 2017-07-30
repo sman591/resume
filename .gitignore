@@ -1,3 +1,6 @@
 node_modules
 .sass-cache
 .grunt
+public/index.html
+public/javascripts
+public/stylesheets
