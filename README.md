@@ -41,4 +41,4 @@ Useful commands:
 
 # Deployment
 
-This site is currently hosted on GitHub pages. You can deply via ```grunt gh-pages```. For further details, see [grunt-gh-pages](https://github.com/tschaub/grunt-gh-pages).
+This site is currently hosted on GitHub pages. You can deply via ```yarn deploy```. For further details, see [grunt-gh-pages](https://github.com/tschaub/grunt-gh-pages).
