@@ -1,10 +1,30 @@
 visible:
+  - stripe
+  - coreos
   - apple
-  - datto
-  - friendlyu
   - oliveraweb
   - busyconf
 items:
+  -
+    key: stripe
+    company: Stripe
+    title: Software Engineering Intern
+    website: stripe.com
+    timeline: Summer 2017
+    bullets:
+      - Developed system for constructing complex PDFs
+      - Maintained configuration of production services
+      - Coordinated requirements between teams
+  -
+    key: coreos
+    company: CoreOS
+    title: Software Engineering Intern
+    website: coreos.com
+    timeline: Fall 2016
+    bullets:
+      - Built graphing components surfacing Kubernetes metrics
+      - Built UI for control of updates to Kubernetes clusters
+      - Migrated various web components from Angular to React
   -
     key: apple
     company: Apple Inc.
