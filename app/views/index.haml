@@ -56,7 +56,7 @@
               = exp['company']
               %span.title= exp['title']
               %span.source
-                %a{href: "https://#{exp['website']}"}= exp['website']
+                %a{href: url(exp)}= exp['website']
               %span.timeline= exp['timeline']
             %ul.split-2
               - exp['bullets'].each do |bullet|
@@ -71,7 +71,7 @@
               = proj['name']
               %span.title= proj['title']
               %span.source
-                %a{href: "https://#{proj['website']}"}= proj['website']
+                %a{href: url(proj)}= proj['website']
               %span.timeline= proj['timeline']
             %ul.split-2
               - proj['bullets'].each do |bullet|

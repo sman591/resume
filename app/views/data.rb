@@ -8,3 +8,8 @@ data_files.each do |name|
   items = data['items'].select { |item| visible.include? item['key'] }
   Object.const_set(name.upcase, items)
 end
+
+def url(item)
+  return item['url'] if item['url']
+  "https://#{item['website']}"
+end

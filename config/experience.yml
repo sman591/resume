@@ -72,6 +72,7 @@ items:
     company: BusyConf
     title: Software Intern
     website: busyconf.com
+    url: http://busyconf.com
     timeline: 2013 - 2015
     bullets:
       - Improved design & clarity of front-end interfaces
