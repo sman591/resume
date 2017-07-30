@@ -88,7 +88,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-haml2html');
+  grunt.loadNpmTasks('grunt-haml');
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('build', ['clean', 'coffee', 'compass', 'haml']);
