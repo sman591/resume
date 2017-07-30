@@ -27,7 +27,7 @@ items:
       - Migrated various web components from Angular to React
   -
     key: apple
-    company: Apple Inc.
+    company: Apple
     title: Software Engineering Intern
     website: apple.com
     timeline: Summer 2016
@@ -37,7 +37,7 @@ items:
       - Created deployment workflow to be used across projects
   -
     key: datto
-    company: Datto, Inc.
+    company: Datto
     title: Software Engineering Intern
     website: datto.com
     timeline: Summer 2015
@@ -48,7 +48,7 @@ items:
       - Developed documentation system for API
   -
     key: friendlyu
-    company: FriendlyU, LLC
+    company: FriendlyU
     title: Software Engineer
     website: friendlyu.com
     timeline: Summer 2015 - Present
@@ -59,7 +59,7 @@ items:
       - Developed documentation system for API
   -
     key: oliveraweb
-    company: Olivera Web, LLC
+    company: Olivera Web
     title: Founder, Freelancer
     website: oliveraweb.com
     timeline: 2009 - Present
@@ -69,7 +69,7 @@ items:
       - Created &amp; maintain Linux hosting services
   -
     key: busyconf
-    company: BusyConf, LLC
+    company: BusyConf
     title: Software Intern
     website: busyconf.com
     timeline: 2013 - 2015
