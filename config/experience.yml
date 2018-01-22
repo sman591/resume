@@ -13,6 +13,7 @@ items:
     timeline: Summer 2017
     bullets:
       - Developed system for constructing complex PDFs
+      # - Worked with design team through PDF iterations
       - Maintained configuration of production services
       - Coordinated requirements between teams
       - Integrated observability metrics into key features
