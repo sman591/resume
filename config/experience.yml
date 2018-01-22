@@ -2,7 +2,7 @@ visible:
   - stripe
   - coreos
   - apple
-  - oliveraweb
+  - friendlyu
   - busyconf
 items:
   -
@@ -15,6 +15,7 @@ items:
       - Developed system for constructing complex PDFs
       - Maintained configuration of production services
       - Coordinated requirements between teams
+      - Integrated observability metrics into key features
   -
     key: coreos
     company: CoreOS
@@ -22,7 +23,7 @@ items:
     website: coreos.com
     timeline: Fall 2016
     bullets:
-      - Built graphing components surfacing Kubernetes metrics
+      - Built graphing components to surface Kubernetes metrics
       - Built UI for control of updates to Kubernetes clusters
       - Migrated various web components from Angular to React
   -
@@ -53,10 +54,10 @@ items:
     website: friendlyu.com
     timeline: Summer 2015 - Present
     bullets:
-      - Developed interactive API query builder
-      - Designed API home and documentation pages
-      - Built automated system for packaging the API
-      - Developed documentation system for API
+      - Built cross-website widget for chat feature
+      - Implemented UI and motion flows
+      - Integrated JavaScript build systems using Webpack
+      - Optimized code for installation in third-party websites
   -
     key: oliveraweb
     company: Olivera Web
