@@ -14,7 +14,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    ffi (1.9.10)
+    ffi (1.15.5)
     haml (4.0.7)
       tilt
     multi_json (1.11.2)
